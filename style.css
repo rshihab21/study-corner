@@ -238,3 +238,46 @@ img.logoIcon {
   }
 
 }
+
+/* company style */
+
+.company-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  animation: slideFromLeft 1s ease forwards;
+}
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 3rem;
+  padding: 1rem;
+  background-color: var(--light-gray);
+  border-radius: 0.625rem;
+  margin-top: 1rem;
+  
+}
+.company-logo {
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  color: var(--gray);
+  gap: 0.5rem;
+  
+}
+.svg-img {
+  width: 2rem;
+}
+.logo-txt {
+  font-size: 1rem;
+
+}
+
+@media screen and (min-width:640px) {
+  .company-grid {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
